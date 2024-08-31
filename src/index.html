@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValCard: Validación de tarjeta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header"><h1 class="titulo">ValCard</h1></header>
+    <main class="main">
+      <div class="container">
+        <div class="texto">
+          <p>Con ValCard verifica si tu número de tarjeta de crédito es válida</p>
+        </div>
+        <div class="cont-taj">
+          <div class="tarjeta">
+              <div class="title-card">ValCard</div>
+              <div class="chip-card"><img src="/img/chip-tarjeta.png" alt="" srcset=""></div>
+              <div class="number-card">
+                <span class="numero-name">Número de tarjeta</span>
+                <span class="numero" id="numero">#### #### #### ####</span>
+              </div>
+              <div class="flex-name">
+                <div class="nombre-card">
+                  <span class="name-name">Nombre de tarjeta</span>
+                  <span class="name" id="name">Eunice Fiorella</span>
+                </div>
+                <div class="fecha-card">
+                  <span class="fecha-name">F. Exp.</span>
+                  <span class="fecha">MM/AA</span>
+                </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-form">
+                <div class="mensaje">
+                  <span id="mensaje">Validar número</span>
+                </div>
+                <div class="label">
+                  <div class="icon">
+                    <span class="material-icons">credit_card</span>
+                  </div>
+                  <div class="numero-label">
+                    <h5>Número de tarjeta</h5>
+                    <input type="text" id="inputNumber" class="inputs" maxlength="19">
+                  </div>
+                </div>
+                <div class="label">
+                  <div class="icon">
+                    <span class="material-icons">person</span>
+                  </div>
+                  <div class="nombre-label">
+                    <h5>Nombre en la tarjeta</h5>
+                    <input type="text" class="inputs" maxlength="20">
+                  </div>
+                </div>
+                <div class="boton">
+                  <button class="#" id="validar"><a class="validar">Validar</a></button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"><span>Copyright &copy; <span id="date"></span> ValCard Eunice</span></footer>
+  </body>
+  <script src="index.js" type="module"></script>
+</html>
